@@ -1,0 +1,23 @@
+<form class="flex flex-column gap-1" [formGroup]="formGender">
+
+  <span class="flex align-items-center gap-1 mt-2">
+    <p-checkbox [binary]="true" formControlName="male" inputId="male"></p-checkbox>
+    <label for="male">Male</label>
+  </span>
+
+  <span class="flex align-items-center gap-1 mt-2">
+    <p-checkbox [binary]="true" formControlName="female" inputId="female"></p-checkbox>
+    <label for="female">Female</label>
+  </span>
+
+  <span class="flex align-items-center gap-1 mt-2">
+    <p-checkbox [binary]="true" formControlName="others" inputId="others"></p-checkbox>
+    <label for="others">Others</label>
+  </span>
+
+  <span class="flex align-items-center gap-1 mt-2">
+    <p-checkbox [binary]="true" formControlName="notSay" inputId="notSay"></p-checkbox>
+    <label for="notSay">Prefer not to say</label>
+  </span>
+
+</form>

@@ -1,0 +1,8 @@
+<form *ngIf="eyeColors$ | async as eyeColors" class="flex flex-column gap-1" [formGroup]="formEye">
+
+  <span class="flex align-items-center gap-1 mt-2" *ngFor="let eye of eyeColors">
+    <p-checkbox [binary]="true" [formControlName]="eye" [inputId]="eye"></p-checkbox>
+    <label [for]="eye">{{eye}}</label>
+  </span>
+
+</form>

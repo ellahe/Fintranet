@@ -1,0 +1,19 @@
+<input type="text" pInputText placeholder="Search..." [formControl]="search" (keyup)="onFilter()"/>
+<p-button class="mx-2" (click)="openSlider()" icon="pi pi-filter"></p-button>
+
+<p-sidebar [(visible)]="sidebarVisible" position="left">
+  <p-accordion [activeIndex]="0">
+    <p-accordionTab header="Gender">
+      <app-gender-filter></app-gender-filter>
+    </p-accordionTab>
+    <p-accordionTab header="Age">
+      <app-age-filter></app-age-filter>
+    </p-accordionTab>
+    <p-accordionTab header="Eye Color">
+      <app-eye-color-filter></app-eye-color-filter>
+    </p-accordionTab>
+    <p-accordionTab header="Birth Date">
+      <app-birthdate-filter></app-birthdate-filter>
+    </p-accordionTab>
+  </p-accordion>
+</p-sidebar>

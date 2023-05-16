@@ -1,0 +1,4 @@
+<form [formGroup]="ageForm" class="flex align-items-center gap-1">
+  <p-inputNumber class="w-3" inputId="integeronly" formControlName="age"> </p-inputNumber>
+  <p-dropdown [options]="statusOptions" optionValue="id" formControlName="status" optionLabel="title"></p-dropdown>
+</form>
